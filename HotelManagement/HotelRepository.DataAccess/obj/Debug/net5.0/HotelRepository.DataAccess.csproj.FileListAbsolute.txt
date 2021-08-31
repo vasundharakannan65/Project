@@ -1,0 +1,15 @@
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\HotelRepository.DataAccess.deps.json
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\HotelRepository.DataAccess.runtimeconfig.json
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\HotelRepository.DataAccess.runtimeconfig.dev.json
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\HotelRepository.DataAccess.dll
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\ref\HotelRepository.DataAccess.dll
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\bin\Debug\net5.0\HotelRepository.DataAccess.pdb
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.AssemblyInfo.cs
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.dll
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\ref\HotelRepository.DataAccess.dll
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.pdb
+C:\Users\Hp\source\repos\HotelRepository.DataAccess\obj\Debug\net5.0\HotelRepository.DataAccess.genruntimeconfig.cache
