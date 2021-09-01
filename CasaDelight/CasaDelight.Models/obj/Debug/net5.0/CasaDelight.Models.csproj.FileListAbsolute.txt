@@ -1,0 +1,12 @@
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\bin\Debug\net5.0\CasaDelight.Models.deps.json
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\bin\Debug\net5.0\CasaDelight.Models.dll
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\bin\Debug\net5.0\ref\CasaDelight.Models.dll
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\bin\Debug\net5.0\CasaDelight.Models.pdb
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.csproj.AssemblyReference.cache
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.AssemblyInfoInputs.cache
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.AssemblyInfo.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.csproj.CoreCompileInputs.cache
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.dll
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\ref\CasaDelight.Models.dll
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight.Models\obj\Debug\net5.0\CasaDelight.Models.pdb
