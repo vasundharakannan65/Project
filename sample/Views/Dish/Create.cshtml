@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model Dish
+
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <h3>Add a Dish</h3>
+    </div>
+</div>
+
+
+<form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly"></div>
+
+                <div class="row g-3 justify-content-center mt-3 align-items-center">
+                    <div class="col-4 col-sm-2">
+                        <label for="DishImage" class="col-form-label" asp-for="DishImage"></label>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <input type="file" id="" class="form-control-file" asp-for="DishImage" />
+                        <span asp-validation-for="DishImage" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="row g-3 justify-content-center mt-3 align-items-center">
+                    <div class="col-4 col-sm-2">
+                        <label for="DishName" class="col-form-label" asp-for="DishName"></label>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <input type="text" id="" class="form-control" asp-for="DishName" />
+                        <span asp-validation-for="DishName" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="row g-3 justify-content-center mt-3 align-items-center">
+                    <div class="col-4 col-sm-2">
+                        <label for="DishDesc" class="col-form-label" asp-for="DishDesc"></label>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <textarea type="text" id="" class="form-control" rows="3" asp-for="DishDesc"></textarea>
+                        <span asp-validation-for="DishDesc" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="row g-3 justify-content-center mt-3 align-items-end">
+                    <div class="col-auto">
+                        <input type="submit" class="btn btn-info" onclick="return alert('Successfully created!')" value="Create" />
+                    </div>
+                    <div class="col-auto">
+                        <a asp-action="Index" class="btn btn-danger">Back</a>
+                    </div>
+                </div>
+
+
+</form>
+
+
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

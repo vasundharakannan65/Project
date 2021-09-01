@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{  
+    ViewData["Title"] = "Cart";
+}
+
+
+
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="card mt-2">
+                <div class="card-header">My Cart</div>
+                <div class="card-body">
+                    @foreach (var item in ViewBag.DishList)
+                    {
+                            <div class="row">
+                                <div class="col-6">
+                                    Name : @item.DishName
+                                    Qty : @item.DishQty
+                                </div>
+                                <div class="col-6">
+                                    <a asp-controller="Order" asp-action="Delete" asp-route-id="@item.DishId" class="btn btn-danger btn-sm"
+                                       onclick="return confirm('Are you Sure to delete the dish')">Delete</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a asp-controller="Order" asp-action="Index" class="btn btn-Success btn-sm">Continue Buying</a>
+                            </div>
+                    }
+                </div> 
+            </div> 
+        </div> 
+    </div>
