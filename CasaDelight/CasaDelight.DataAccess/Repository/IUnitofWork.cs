@@ -9,7 +9,7 @@ namespace CasaDelight.DataAccess.Repository
 {
     public interface IUnitofWork : IDisposable
     {
-        IRepository<Dish> Dishes { get; }
+        public IRepository<Dish> Dishes { get; }
         void Save();
     }
 }

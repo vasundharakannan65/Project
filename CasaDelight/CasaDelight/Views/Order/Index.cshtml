@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@model CasaDelight.ViewModels.OrderViewModel
+
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <h3>LIST OF DISHES AVAILABLE</h3>
+        </div>
+    </div>
+
+@foreach (var item in Model.Dish)
+{
+    var ImagePath = "~/images/" + (item.DishImage ?? "noimage.jpg");
+
+
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="card mt-2">
+                <div class="card-body">
+                    <div class="row">
+
+
+
+                            <div class="col-4">
+                                <img src="@ImagePath" asp-append-version="true" class="img-thumbnail" />
+                            </div>
+
+                            <div class="col-8">
+
+                                <h5 class="card-title">Name : @item.DishName</h5>
+
+                                <p class="card-text">Description : @item.DishDesc</p>
+
+                                <p class="card-text">Price : $@item.DishPrice</p>
+
+
+                                <label asp-for="@item.DishQty">Quantity : </label>
+                                <input type="number" class=" form-control col-2 mt-3" asp-for="@item.DishQty" min="0" />
+
+
+
+                                <a asp-controller="Order" asp-action="Cart" asp-route-id="@item.DishId" type=""  class="btn btn-primary float-right">
+                                Add to cart</a>
+                            </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

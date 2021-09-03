@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CasaDelight.Models.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,6 @@ namespace CasaDelight.DataAccess.Repository
 
         void Add(T entity);
         void Remove(T entity);
-
+        void Update(T entity);
     }
 }

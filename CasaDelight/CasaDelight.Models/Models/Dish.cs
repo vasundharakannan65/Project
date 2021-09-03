@@ -14,7 +14,7 @@ namespace CasaDelight.Models.Models
 
         [Required]
         [Display(Name = "Image")]
-        public byte[] DishImage { get; set; }
+        public string DishImage { get; set; }
 
         [Required]
         [Display(Name = "Name")]

@@ -9,6 +9,6 @@ namespace CasaDelight.DataAccess.Repository
 {
     public interface IMenuRepository : IRepository<Dish>
     {
-        public void Update(Dish dish);
+
     }
 }

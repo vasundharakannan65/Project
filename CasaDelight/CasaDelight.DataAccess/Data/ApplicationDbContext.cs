@@ -17,5 +17,6 @@ namespace CasaDelight.DataAccess.Data
         }
 
         public DbSet<Dish> Dishes { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }

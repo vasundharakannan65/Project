@@ -23,9 +23,7 @@ namespace CasaDelight.DataAccess.Data
 
         public void Initialize()
         {
-
             _roleManager.CreateAsync(new IdentityRole("Admin"));
-
         }
 
     }

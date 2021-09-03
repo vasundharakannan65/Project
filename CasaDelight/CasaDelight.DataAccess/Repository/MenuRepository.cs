@@ -8,18 +8,13 @@ using System.Threading.Tasks;
 
 namespace CasaDelight.DataAccess.Repository
 {
-    public class MenuRepository : Repository<Dish>, IMenuRepository
+    public class MenuRepository : Repository<Dish>
     {
         private readonly ApplicationDbContext _db;
 
         public MenuRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
-        }
-
-        public void Update(Dish dish)
-        {
-           
         }
 
     }

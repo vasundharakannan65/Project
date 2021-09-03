@@ -37,5 +37,11 @@ namespace CasaDelight.DataAccess.Repository
             _db.Set<T>().Remove(entity);
         }
 
+        public void Update(T entity)
+        {
+            _db.Update(entity);
+        }
+
+
     }
 }

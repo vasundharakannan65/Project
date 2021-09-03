@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Details";
+    var ImagePath = "~/images/" + (Model.DishImage ?? "noimage.jpg");
+}
+
+@model CasaDelight.Models.Models.Dish
+
+<div class="row justify-content-center">
+    <div class="col-10">
+        <div class="card mt-2 w-75">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="@ImagePath" asp-append-version="true" class="img-thumbnail" />
+                    </div>
+                    <div class="col-8">
+                        <h5 class="card-title">Name : @Model.DishName</h5>
+
+                        <p class="card-text">Description : @Model.DishDesc</p>
+
+                        <p class="card-text">Price : $@Model.DishPrice</p>
+
+                        <a asp-controller="Menu" asp-action="Index" class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

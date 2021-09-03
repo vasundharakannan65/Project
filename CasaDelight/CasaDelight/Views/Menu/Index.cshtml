@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+
+@model CasaDelight.ViewModels.MenuViewModel
+
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <h3>PANTRY</h3>
+    </div>
+</div>
+
+<div class="row justify-content-end">
+    <div class="col-4 col-sm-2">
+        <a class="btn btn-primary text-white" asp-action="Create"><i class="fas fa-plus"></i> Add Dish</a>
+    </div>
+</div>
+
+
+<div class="row justify-content-center mt-3">
+    <div class="col-12">
+
+        <table class="table table-responsive table-striped text-center">
+            <thead>
+                <tr>
+                    <th width="25%">Image</th>
+                    <th width="15%">Name</th>
+                    <th width="15%">Description</th>
+                    <th width="10%">Price</th>
+                    <th width="35%">Action</th>
+                </tr>
+            </thead>
+            <tbody class="p-2">
+                @foreach (var dish in Model.Dish)
+                {
+                    var ImagePath = "~/images/" + (dish.DishImage ?? "noimage.jpg");
+                    <tr>
+                        <td><img  src="@ImagePath" asp-append-version="true"/></td>
+                        <td>@dish.DishName</td>
+                        <td>@dish.DishDesc</td>
+                        <td>$@dish.DishPrice</td>
+                        <td class="mt-2">
+                            <a asp-controller="Menu" asp-action="Details" asp-route-id="@dish.DishId" class="btn btn-info ml-3 btn-sm">Details</a>
+                            <a asp-controller="Menu" asp-action="Update" asp-route-id="@dish.DishId" class="btn btn-warning btn-sm ml-3">Edit</a>
+                            <a asp-controller="Menu" asp-action="Delete" asp-route-id="@dish.DishId" class="btn btn-danger btn-sm ml-3"
+                               onclick="return confirm('Are you Sure to delete the dish')">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

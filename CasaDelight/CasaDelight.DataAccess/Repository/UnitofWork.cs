@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CasaDelight.DataAccess.Repository
 {
     public class UnitofWork : IUnitofWork
-    {
+    { 
         private readonly ApplicationDbContext _db;
 
         private IRepository<Dish> _dishes;
@@ -17,6 +17,7 @@ namespace CasaDelight.DataAccess.Repository
         public UnitofWork(ApplicationDbContext db)
         {
             _db = db;
+
         }
 
         public IRepository<Dish> Dishes => _dishes ??= new Repository<Dish>(_db);

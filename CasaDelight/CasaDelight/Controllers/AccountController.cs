@@ -45,8 +45,7 @@ namespace CasaDelight.Controllers
 
                     if (result.Succeeded)
                     {
-                        //  HttpContext.Session.SetString("user", user.UserName);
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Menu");
                     }
 
                 }
@@ -80,8 +79,6 @@ namespace CasaDelight.Controllers
                     var result = await _userManager.CreateAsync(user, model.Password);
                     if (result.Succeeded)
                     {
-                        //await _userManager.AddToRoleAsync(user, "Customer");
-
                         return RedirectToAction("Index", "Home");
                     }
 

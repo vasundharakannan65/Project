@@ -394,3 +394,9 @@ C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\bin\Debug\net5.0\Micr
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Menu\Create.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Menu\Index.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Menu\Details.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Menu\Update.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Order\Cart.cshtml.g.cs

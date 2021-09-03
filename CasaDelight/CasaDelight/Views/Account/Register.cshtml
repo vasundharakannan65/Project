@@ -4,67 +4,63 @@
 
 @model CasaDelight.ViewModels.RegisterViewModel
 
-
-<div class="row">
-    <div class="col-md-8 col-sm-12">
-        <form asp-action="Register" method="post">
-            <h4> User Registration</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Name"></label>
+<div class="container col-md-offset-2">
+    <div class="row">
+        <div class="col">
+            <div class="card justify-content-center">
+                <div class="card-header text-center">
+                    <h2>Register</h2>
                 </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <form asp-action="Register" method="post">
 
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
+                                <div class="form-group col">
+                                    <label asp-for="Name">Name</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
 
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Email"></label>
+                                <div class="form-group col">
+                                    <label asp-for="Email">Email</label>
+                                    <input asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group col">
+                                    <label asp-for="Password">Password</label>
+                                    <input type="password" asp-for="Password" class="form-control" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group col">
+                                    <label asp-for="ConfirmPassword">Confirm Password</label>
+                                    <input type="password" asp-for="ConfirmPassword" class="form-control" />
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group col">
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <input type="submit" class="btn btn-primary" value="Register" onclick="return alert('Successfully registered!')" />
+                                        <input type="reset" class="btn btn-danger" value="Cancel" />
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="Password"></label>
-                </div>
-
-            </div>
-            <div class="col-md-10">
-                <input asp-for="Password" class="form-control" type="password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-md-2">
-                    <label asp-for="ConfirmPassword"></label>
-                </div>
-
-            </div>
-            <div class="col-md-10">
-                <input asp-for="ConfirmPassword" class="form-control" type="password" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-10">
-                    <input type="submit" class="btn btn-success" value="Register" />
+                <div class="card-footer">
+                    <p class="col-md-10">
+                        If already a registered user?<a asp-action="Login"> Login</a>
+                    </p>
                 </div>
             </div>
-
-        </form>
+        </div>
     </div>
 </div>
+
 @section Scripts
 {
     <partial name="_ValidationScriptsPartial" />
