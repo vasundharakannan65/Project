@@ -35,14 +35,9 @@
 
                                 <p class="card-text">Price : $@item.DishPrice</p>
 
-
-                                <label asp-for="@item.DishQty">Quantity : </label>
-                                <input type="number" class=" form-control col-2 mt-3" asp-for="@item.DishQty" min="0" />
-
-
-
-                                <a asp-controller="Order" asp-action="Cart" asp-route-id="@item.DishId" type=""  class="btn btn-primary float-right">
+                                <a asp-controller="Order" asp-action="Cart" asp-route-id="@item.DishId" id="AddtoCart"  class="btn btn-primary float-right">
                                 Add to cart</a>
+
                             </div>
 
 

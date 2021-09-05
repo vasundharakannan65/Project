@@ -50,7 +50,7 @@ namespace CasaDelight.Controllers
         {
             if (ModelState.IsValid)
             {
-                string fileName = NewMethod(createdDish);
+                string fileName = PhotoProcess(createdDish);
 
                 Dish newDish = new()
                 {   
@@ -120,7 +120,7 @@ namespace CasaDelight.Controllers
                             "images", editedDish.ExistingImage);
                         System.IO.File.Delete(filePath);
                     }
-                    dish.DishImage = NewMethod(editedDish);
+                    dish.DishImage = PhotoProcess(editedDish);
                 }
 
                 _unitofWork.Dishes.Update(dish);
@@ -132,7 +132,7 @@ namespace CasaDelight.Controllers
         }
 
         //display and saving img
-        private string NewMethod(CreateViewModel editedDish)
+        private string PhotoProcess(CreateViewModel editedDish)
         {
             string fileName = null;
             if (editedDish.DishImage != null)

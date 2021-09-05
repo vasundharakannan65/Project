@@ -17,6 +17,6 @@ namespace CasaDelight.Models.Models
         public int PhoneNumber { get; set; }
 
         //public double TotalCost { get; set; }
-        public ICollection<Dish> Cart { get; set; }
+        public ICollection<Dish> CartList { get; set; }
     }
 }
