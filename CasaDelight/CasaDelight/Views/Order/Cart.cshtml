@@ -25,24 +25,26 @@
                                     <th width="20%">Item Name</th>
                                     <th width="10%">Quantity</th>
                                     <th width="15%">Price</th>
+                                    <th width="10%">Cost</th>
                                     <th width="15%">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="p-2">
                                 @foreach (var item in Model)
                                 {
-                                    <tr>
-                                        <td>@item.DishName</td>
-                                        <td><input type="number" min="0" id="quantity" /></td>
-                                        <td>$</td>
-                                        <td><a asp-action="" asp-controller="" class="btn btn-danger btn-sm">Remove</a></td>
-                                    </tr>
+                                <tr>
+                                    <td>@item.DishName</td>
+                                    <td><input type="number" min="0" id="quantity" onKeyUp="FindPrice()" style="outline:none;" /></td>
+                                    <td><input id="price" asp-for="@item.DishPrice" readonly/></td>
+                                    <td>$<input type="number" id="cost" /></td>
+                                    <td><a asp-action="" asp-controller="" class="btn btn-danger btn-sm">Remove</a></td>
+                                </tr>
                                 }
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th colspan="3">Total Cost:</th>
-                                    <th>$</th>
+                                    <th colspan="4">Total Cost:</th>
+                                    <th>$<input type="number" id="total" /></th>
                                 </tr>
                             </tfoot>
                          </table>           
@@ -53,7 +55,7 @@
                 <div class="card-footer">
                     <div class="col">
                         <div class="d-grid gap-2 d-md-block">
-                            <a class="btn btn-info float-right" asp-action="" asp-controller="">Place order</a>
+                            <a class="btn btn-info float-right" asp-action="PlaceOrder" asp-controller="Order">Place order</a>
                             <a class="btn btn-info float-left" asp-action="Index" asp-controller="Order">Continue Buying</a>
                         </div>
                     </div>

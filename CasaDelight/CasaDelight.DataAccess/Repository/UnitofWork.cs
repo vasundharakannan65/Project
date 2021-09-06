@@ -13,6 +13,7 @@ namespace CasaDelight.DataAccess.Repository
         private readonly ApplicationDbContext _db;
 
         private IRepository<Dish> _dishes;
+        private IRepository<Order> _orders;
 
         public UnitofWork(ApplicationDbContext db)
         {
@@ -21,6 +22,7 @@ namespace CasaDelight.DataAccess.Repository
         }
 
         public IRepository<Dish> Dishes => _dishes ??= new Repository<Dish>(_db);
+        public IRepository<Order> Orders => _orders ??= new Repository<Order>(_db);
 
         public void Dispose()
         {

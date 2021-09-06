@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "PlaceOrder";
+}
+
+@model CasaDelight.Models.Models.Order
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <form method="post" asp-action="PlaceOrder">
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber"></label>
+                <input asp-for="PhoneNumber" class="form-control"/>
+            </div>
+
+            <button type="submit" onclick="return confirm('Your order has been placed successfully!')" class="btn btn-primary">Order</button>
+        </form>
+    </div>
+</div>

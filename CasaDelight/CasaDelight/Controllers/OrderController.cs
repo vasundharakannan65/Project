@@ -13,14 +13,13 @@ namespace CasaDelight.Controllers
     {
         private readonly IUnitofWork _unitofWork;
 
-        public Order order = new();
+        IList<Dish> _cartList = new List<Dish>();
 
 
         public OrderController(IUnitofWork unitofWork)
         {
             _unitofWork = unitofWork;
-            order.CartList = new List<Dish>();
-            
+                       
         }
 
 
@@ -43,9 +42,36 @@ namespace CasaDelight.Controllers
                 return NotFound();
             }
 
-            order.CartList.Add(dish);
+            _cartList.Add(dish);
 
-            return View(order.CartList);
+            //ViewBag.Cart.Concat(dish);
+            //ViewBag.students = students.Concat(weekend);
+
+            ViewBag.Cart = _cartList;
+
+            return View();
         }
+
+        //placeorder
+        public IActionResult PlaceOrder()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult PlaceOrder(Order order)
+        {
+            Order newOrder = new Order
+            {
+                PhoneNumber = order.PhoneNumber
+            };
+
+            _unitofWork.Orders.Add(newOrder);
+            _unitofWork.Save();
+
+            return View();
+        }
+
+
     }
 }

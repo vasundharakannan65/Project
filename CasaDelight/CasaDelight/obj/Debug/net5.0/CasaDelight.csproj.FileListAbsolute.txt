@@ -400,3 +400,4 @@ C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razo
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Menu\Update.cshtml.g.cs
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
 C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Order\Cart.cshtml.g.cs
+C:\Users\vasundharask\source\repos\CasaDelight\CasaDelight\obj\Debug\net5.0\Razor\Views\Order\PlaceOrder.cshtml.g.cs

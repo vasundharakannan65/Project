@@ -4,12 +4,14 @@
 
 // Write your JavaScript code.
 
-$(document).ready(function () {
-    $("#AddtoCart").click(function () {
-        SaveItem();
-    });
+function FindPrice() {
+    Qty = Number(document.getElementById('quantity').value);
+    Price = Number(document.getElementById('price').value);
+    Cost = Qty * Price;
 
-    function SaveItem() {
-        console.log("hfughr");
-    }
-});
+    document.getElementById('cost').value = Cost;
+}
+
+function FindTotal() {
+    
+}
