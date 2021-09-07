@@ -13,7 +13,7 @@ namespace CasaDelight.Controllers
     {
         private readonly IUnitofWork _unitofWork;
 
-        IList<Dish> _cartList = new List<Dish>();
+        List<Dish> _cartList = new List<Dish>();
 
 
         public OrderController(IUnitofWork unitofWork)
@@ -44,12 +44,7 @@ namespace CasaDelight.Controllers
 
             _cartList.Add(dish);
 
-            //ViewBag.Cart.Concat(dish);
-            //ViewBag.students = students.Concat(weekend);
-
-            ViewBag.Cart = _cartList;
-
-            return View();
+            return View(_cartList);
         }
 
         //placeorder

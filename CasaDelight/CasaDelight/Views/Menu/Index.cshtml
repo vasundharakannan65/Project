@@ -21,7 +21,7 @@
 <div class="row justify-content-center mt-3">
     <div class="col-12">
 
-        <table class="table table-responsive table-striped text-center">
+        <table class="table table-responsive table-borderless table-striped text-center" style="overflow:auto; max-height:350px;">
             <thead>
                 <tr>
                     <th width="25%">Image</th>
@@ -36,7 +36,7 @@
                 {
                     var ImagePath = "~/images/" + (dish.DishImage ?? "noimage.jpg");
                     <tr>
-                        <td><img  src="@ImagePath" asp-append-version="true"/></td>
+                        <td><img src="@ImagePath" asp-append-version="true" /></td>
                         <td>@dish.DishName</td>
                         <td>@dish.DishDesc</td>
                         <td>$@dish.DishPrice</td>
