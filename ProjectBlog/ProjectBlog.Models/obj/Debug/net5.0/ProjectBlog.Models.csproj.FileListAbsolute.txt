@@ -1,0 +1,12 @@
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\bin\Debug\net5.0\ProjectBlog.Models.deps.json
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\bin\Debug\net5.0\ProjectBlog.Models.dll
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\bin\Debug\net5.0\ref\ProjectBlog.Models.dll
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\bin\Debug\net5.0\ProjectBlog.Models.pdb
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.csproj.AssemblyReference.cache
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.AssemblyInfoInputs.cache
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.AssemblyInfo.cs
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.csproj.CoreCompileInputs.cache
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.dll
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ref\ProjectBlog.Models.dll
+C:\Users\vasundharask\source\repos\ProjectBlog\ProjectBlog.Models\obj\Debug\net5.0\ProjectBlog.Models.pdb
