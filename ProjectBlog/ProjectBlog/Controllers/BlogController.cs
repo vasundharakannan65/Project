@@ -10,6 +10,7 @@ namespace ProjectBlog.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    //[Route("api/[controller]")]
     public class BlogController : ControllerBase
     {
         private readonly IUnitofWork _unitofWork;
@@ -45,6 +46,7 @@ namespace ProjectBlog.Controllers
         }
 
         //update blog
+        [HttpPut]
         public void UpdateBlog(Blog blog)
         {
             Blog newBlog = new()
@@ -55,6 +57,7 @@ namespace ProjectBlog.Controllers
 
             _unitofWork.Blogs.Update(newBlog);
             _unitofWork.Save();
+
         }
 
         //delete blog

@@ -12,6 +12,7 @@ namespace ProjectBlog.DataAccess.Repository
     {
 
         public IRepository<Blog> Blogs { get; }
+        public IRepository<Comment> Comments { get; }
         void Save();
     }
 }

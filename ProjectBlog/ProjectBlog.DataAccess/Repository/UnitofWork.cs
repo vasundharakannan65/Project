@@ -16,13 +16,18 @@ namespace ProjectBlog.DataAccess.Repository
 
         private IRepository<Blog> _blogs;
 
+        private IRepository<Comment> _comments;
+
         public UnitofWork(ApplicationDbContext db)
         {
             _db = db;
 
         }
 
+
         public IRepository<Blog> Blogs => _blogs ??= new Repository<Blog>(_db);
+        public IRepository<Comment> Comments => _comments ??= new Repository<Comment>(_db);
+
 
         public void Dispose()
         {

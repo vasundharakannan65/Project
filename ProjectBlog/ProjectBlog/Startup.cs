@@ -41,6 +41,14 @@ namespace ProjectBlog
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjectBlog", Version = "v1" });
             });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +59,7 @@ namespace ProjectBlog
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjectBlog v1"));
+                app.UseCors("CorsPolicy");
             }
 
             app.UseHttpsRedirection();
@@ -58,6 +67,8 @@ namespace ProjectBlog
             app.UseRouting();
 
             app.UseAuthorization();
+
+            
 
             app.UseEndpoints(endpoints =>
             {
