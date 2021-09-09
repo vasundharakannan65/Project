@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-8 mx-auto">
+        <div class="card">
+            <div *ngIf="dataLoaded">
+                <div class="card-header">Edit a Blog</div>
+                <div class="card-body">
+
+                    <form [formGroup]="editForm" (submit)="editBlog()">
+                        <label>Title</label>
+                        <input class="form-control" formControlName="blogTitle"/>
+
+                        <label>Content</label>
+                        <textarea class="form-control" formControlName="blogContent" rows="8">
+                        </textarea>
+
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
